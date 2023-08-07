@@ -1,0 +1,91 @@
+@media screen and (min-width: 400px) {
+  .pledgecard-outer-container {
+    border: 0.18rem solid hsl(0, 0%, 90%);
+    width: 40rem;
+    margin: 1.25rem;
+    border-radius: 0.5rem;
+  }
+
+  .pledgecard-inner-container {
+    padding: 0.75rem;
+  }
+
+  .pledgecard-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 40rem; */
+  }
+
+  .pledgecard-pledge-text {
+    color: hsl(176, 50%, 47%);
+  }
+
+  .pledgecard-product-description {
+    margin: 0.65rem;
+    color: hsl(0, 0%, 55%);
+  }
+
+  .pledgecard-overview-container {
+    display: flex;
+    justify-content: space-between;
+    /* width: 37.5rem; */
+    align-items: center;
+  }
+
+  .pledgecard-pledge-products-left {
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+
+  .pledgecard-left-text {
+    color: hsl(0, 0%, 55%);
+    font-size: 0.7em;
+    font-weight: 400;
+  }
+}
+
+.pledgecard-btn {
+  padding: 0.62rem;
+  border-radius: 1.25rem;
+  width: 9.37rem;
+  cursor: pointer;
+  color: #ffffffff;
+  font-size: 0.9em;
+  border: none;
+  outline: none;
+  background-color: hsl(176, 50%, 47%);
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.pledgecard-btn:hover {
+  background-color: hsl(176, 72%, 28%);
+}
+
+.pledgecard-out-of-stock {
+  padding: 0.75rem;
+}
+
+.pledgecard-out-of-stock .pledgecard-btn:disabled {
+  background: #dddddd;
+  cursor: not-allowed;
+}
+
+.pledgecard-out-of-stock .pledge-product-title {
+  color: hsl(0, 0%, 48%);
+}
+
+.pledgecard-out-of-stock .pledgecard-pledge-text {
+  color: hsl(176, 50%, 65%);
+}
+
+.pledgecard-out-of-stock .pledgecard-pledge-products-left {
+  color: hsl(0, 0%, 48%);
+}
+
+@media screen and (max-width: 399px) {
+  .pledgecard-outer-container {
+    display: none;
+  }
+}

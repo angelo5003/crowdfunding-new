@@ -1,6 +1,11 @@
+import { useState } from "react";
 import "./AboutStyle.css";
+import PledgeCard from "../../components/Cards/PledgeCard/PledgeCard";
+import data from "../../data/data.json";
 
 const About = () => {
+  const [dataList, setDataList] = useState(data);
+  console.log(`data in list:`, dataList);
   return (
     <div className="about-page-outer-container">
       <section className="about-page-inner-container">
@@ -20,10 +25,10 @@ const About = () => {
         </p>
       </section>
 
-      {/* {Array.isArray(data) &&
-        data.map((info) => {
+      {Array.isArray(dataList) &&
+        dataList.map((info) => {
           return <PledgeCard key={info.id} info={info} />;
-        })} */}
+        })}
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import ProgressBar from "../ProgressBar/ProgressBar";
+import ProgressBar from "../../ProgressBar/ProgressBar";
 import "./ResultCardStyle.css";
 
 const ResultCard = () => {

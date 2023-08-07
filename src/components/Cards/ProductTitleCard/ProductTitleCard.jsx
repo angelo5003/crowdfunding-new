@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./ProductTitleCardStyles.css";
-import BrandLogo from "../../assets/images/logo-mastercraft.svg";
-import BookMarkIcon from "../../assets/images/icon-bookmark.svg";
-import BookMarkIconChecked from "../../assets/images/icon-bookmarked-marked.svg";
+import BrandLogo from "../../../assets/images/logo-mastercraft.svg";
+import BookMarkIcon from "../../../assets/images/icon-bookmark.svg";
+import BookMarkIconChecked from "../../../assets/images/icon-bookmarked-marked.svg";
 
 const ProductTitleCard = () => {
   const [bookMarked, setBookMarked] = useState(false);

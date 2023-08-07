@@ -1,6 +1,6 @@
 import "./HomeStyles.css";
-import ProductTitleCard from "../components/ProductTitleCard/ProductTitleCard";
-import ResultCard from "../components/ResultCard/ResultCard";
+import ProductTitleCard from "../components/Cards/ProductTitleCard/ProductTitleCard";
+import ResultCard from "../components/Cards/ResultCard/ResultCard";
 import About from "./About/About";
 
 const Home = () => {
