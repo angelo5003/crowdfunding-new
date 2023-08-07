@@ -1,0 +1,33 @@
+.resultcard-outer-container {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 0.7rem;
+  margin-top: 1.2rem;
+  border: 1px solid hsl(0, 0%, 90%);
+}
+
+.resultcard-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  align-items: center;
+}
+
+.resultcard-results {
+  color: black;
+}
+
+.result-vertical-line {
+  border-color: hsl(0, 0%, 95%);
+  height: 5rem;
+}
+
+.result-title {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.resultcard-info {
+  font-size: 0.9em;
+  color: hsl(0, 0%, 48%);
+}

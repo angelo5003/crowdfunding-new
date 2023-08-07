@@ -1,0 +1,7 @@
+.home-page-outer-container {
+  /* display: flex; */
+  display: grid;
+  justify-content: center;
+  position: relative;
+  top: 25.5rem;
+}

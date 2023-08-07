@@ -1,0 +1,32 @@
+[
+  {
+    "id": 0,
+    "backerTitle": "Pledge with no reward",
+    "backerText": " Choose to support us without a reward if you simply believe in our project. As a backer, you will be signed up to receive product updates via email.",
+    "name": "backerOption_0"
+  },
+  {
+    "id": 1,
+    "backerTitle": "Bamboo Stand",
+    "backerPledge": 25,
+    "backerLeft": 101,
+    "backerText": "You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.",
+    "name": "backerOption_1"
+  },
+  {
+    "id": 2,
+    "backerTitle": "Black Edition Stand",
+    "backerPledge": 75,
+    "backerLeft": 64,
+    "backerText": "You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.",
+    "name": "backerOption_2"
+  },
+  {
+    "id": 3,
+    "backerTitle": "Mahogany Special Edition",
+    "backerPledge": 200,
+    "backerLeft": 0,
+    "backerText": "You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.",
+    "name": "backerOption_3"
+  }
+]

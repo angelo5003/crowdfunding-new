@@ -1,0 +1,97 @@
+@media screen and (min-width: 399px) {
+  .product-title-card-inner-container {
+    border: 1px solid hsl(0, 0%, 90%);
+    border-radius: 8px;
+    background-color: #ffffffff;
+  }
+
+  .brand-logo-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .brand-logo-img {
+    position: relative;
+    width: 3.4rem;
+    margin: 0 auto;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    bottom: 1.5rem;
+  }
+
+  .product-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1.25rem;
+    color: black;
+  }
+
+  .product-title {
+    margin: 0.31rem;
+  }
+
+  .product-btn-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1.25rem;
+  }
+
+  .green-btn {
+    border: none;
+    padding: 1rem;
+    margin: 0;
+    background: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    background-color: hsl(176, 50%, 47%);
+    border-radius: 6rem;
+    width: 11.2rem;
+    text-align: center;
+  }
+
+  .green-btn:hover {
+    background-color: hsl(176, 72%, 28%);
+  }
+
+  .bookmark-icon-container {
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+
+  .bookmark-icon {
+    margin-right: 0.6rem;
+  }
+
+  .bookmark-btn-text-container {
+    background-color: hsl(0, 0%, 85%);
+    width: 150px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    color: hsl(0, 0%, 48%);
+    font-weight: 700;
+    font-size: 1.05em;
+  }
+
+  .bookmark-btn-text-container-booked {
+    /* background-color: hsl(0, 0%, 95%); */
+    background-color: #f4f8f9;
+    color: hsl(176, 50%, 47%);
+    width: 150px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 1.05em;
+  }
+}

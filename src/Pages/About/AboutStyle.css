@@ -1,0 +1,24 @@
+.about-page-outer-container {
+  background-color: #ffffffff;
+  color: black;
+  padding: 20px;
+  margin-top: 1.2rem;
+  border-radius: 0.7rem;
+  border: 1px solid hsl(0, 0%, 90%);
+}
+
+.about-page-inner-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 40rem;
+  margin: 0 auto;
+}
+
+.about-page-title {
+  margin-bottom: 0.7rem;
+}
+
+.about-page-info {
+  color: hsl(0, 0%, 48%);
+}
