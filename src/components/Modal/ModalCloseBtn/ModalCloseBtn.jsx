@@ -4,11 +4,11 @@ import { MdClose } from "react-icons/md";
 import { ModalContext } from "../../Cards/PledgeCard/PledgeCard";
 
 const ModalCloseBtn = () => {
-  const closeModal = useContext(ModalContext);
+  const handleModal = useContext(ModalContext);
 
   return (
     <div className="modal-close-btn-container">
-      <button className="modal-close-btn" onClick={closeModal}>
+      <button className="modal-close-btn" onClick={handleModal}>
         <MdClose className="modal-close-btn-icon" />
       </button>
     </div>
