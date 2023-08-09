@@ -1,9 +1,18 @@
+import { useState, createContext } from "react";
 import "./PledgeCardStyle.css";
 import { PledgeCardPropType } from "../../../utils/PropTypes";
+import ProductModal from "../../Modal/ProductModal/ProductModal";
+
+export const ModalContext = createContext();
 
 const PledgeCard = ({ info }) => {
+  const [openModal, setOpenModal] = useState(false);
+
+  const handleModal = () => {
+    setOpenModal(!openModal);
+  };
   return (
-    <>
+    <ModalContext.Provider value={handleModal}>
       <div className="pledgecard-outer-container">
         <article
           className={`${
@@ -24,13 +33,18 @@ const PledgeCard = ({ info }) => {
               {info.productsLeft}{" "}
               <span className="pledgecard-left-text">left</span>
             </p>
-            <button className="pledgecard-btn" disabled={info.id === 3}>
+            <button
+              className="pledgecard-btn"
+              disabled={info.id === 3}
+              onClick={handleModal}
+            >
               {info.productButton}
             </button>
           </div>
         </article>
+        {openModal ? <ProductModal /> : null}
       </div>
-    </>
+    </ModalContext.Provider>
   );
 };
 

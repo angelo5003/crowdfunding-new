@@ -1,0 +1,28 @@
+.modal-close-btn-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.modal-close-btn {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+  font-size: 1rem;
+  font-family: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.modal-close-btn-icon {
+  color: hsl(0, 0%, 48%);
+  font-size: 1.5em;
+}
+
+.modal-close-btn-icon:hover {
+  color: #000;
+  transition: 0.3s;
+}

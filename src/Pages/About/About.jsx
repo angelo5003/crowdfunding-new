@@ -5,7 +5,7 @@ import data from "../../data/data.json";
 
 const About = () => {
   const [dataList, setDataList] = useState(data);
-  console.log(`data in list:`, dataList);
+
   return (
     <div className="about-page-outer-container">
       <section className="about-page-inner-container">
