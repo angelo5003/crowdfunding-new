@@ -1,10 +1,17 @@
 import { useState } from "react";
 import "./DropDownBoxStyle.css";
 import { LiaDollarSignSolid } from "react-icons/lia";
+import { AmountPropType } from "../../../utils/PropTypes";
 import SuccesModal from "../SuccesModal/SuccesModal";
 
-const DropDownBox = () => {
+const DropDownBox = ({ selectAmount, setSelectAmount }) => {
   const [succesModal, setSuccessModal] = useState(false);
+
+  const handleChange = (e) => {
+    e.preventDefault();
+    setSelectAmount(Number(e.target.value)); // set the value from the input field to a number
+  };
+
   const handleSuccesModal = () => {
     setSuccessModal(!succesModal);
   };
@@ -16,7 +23,12 @@ const DropDownBox = () => {
         <div className="dropdown-pledge-controls">
           <form className="dropdown-pledge-input-container">
             <LiaDollarSignSolid className="dropdown-pledge-dollar-sign" />
-            <input type="text" className="dropdown-pledge-input" />
+            <input
+              type="text"
+              value={selectAmount}
+              className="dropdown-pledge-input"
+              onChange={handleChange}
+            />
           </form>
           <button className="dropdown-pledge-btn" onClick={handleSuccesModal}>
             Continue
@@ -27,5 +39,7 @@ const DropDownBox = () => {
     </section>
   );
 };
+
+DropDownBox.propTypes = AmountPropType;
 
 export default DropDownBox;

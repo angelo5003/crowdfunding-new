@@ -5,3 +5,8 @@ import PropTypes from "prop-types";
 export const PledgeCardPropType = {
   info: PropTypes.object.isRequired,
 };
+
+export const AmountPropType = {
+  selectAmount: PropTypes.number.isRequired,
+  setSelectAmount: PropTypes.func.isRequired,
+};

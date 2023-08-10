@@ -8,6 +8,8 @@ import backerData from "../../../data/backerData.json";
 const ProductModal = () => {
   const [productData, setProductData] = useState(backerData);
   const [selectedItem, setSelectedItem] = useState("");
+  const [selectAmount, setSelectAmount] = useState(0);
+  console.log(`typeOf:`, typeof selectAmount);
 
   const handleSelectedItem = (productName) => {
     // productName is a parameter for the product.name coming from the input field.
@@ -56,7 +58,12 @@ const ProductModal = () => {
                     <p className="modal-details-text">{product.backerText}</p>
 
                     {/*if the selected item is equal to the selected product.name than show the dropdownbox component else show nothing */}
-                    {selectedItem === product.name ? <DropDownBox /> : null}
+                    {selectedItem === product.name ? (
+                      <DropDownBox
+                        selectAmount={selectAmount}
+                        setSelectAmount={setSelectAmount}
+                      />
+                    ) : null}
                   </div>
                 );
               })}
