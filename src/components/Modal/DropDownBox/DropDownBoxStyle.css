@@ -1,0 +1,71 @@
+@media screen and (min-width: 400px) {
+  .dropdown-pledge-outer-container {
+    color: black;
+  }
+
+  .dropdown-pledge-hr-line {
+    margin-top: 1.25rem;
+  }
+
+  .dropdown-pledge-inner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.25rem;
+  }
+
+  .dropdown-pledge-title {
+    color: hsl(0, 0%, 48%);
+  }
+
+  .dropdown-pledge-controls {
+    display: flex;
+    justify-content: space-evenly;
+    width: 21.8rem;
+    align-items: center;
+  }
+
+  .dropdown-pledge-input-container {
+    border: 2px solid hsl(176, 50%, 47%);
+    padding: 0.62rem;
+    border-radius: 3.12rem;
+    color: hsl(0, 0%, 48%);
+    display: flex;
+    align-items: center;
+  }
+
+  .dropdown-pledge-dollar-sign {
+    font-size: 1.2em;
+  }
+
+  .dropdown-pledge-input {
+    width: 3.75rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    font-size: 0.9em;
+  }
+
+  .dropdown-pledge-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.62rem;
+    border-radius: 3.12rem;
+    width: 6.25rem;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    background: none;
+    color: #ffffffff;
+    font-size: 1em;
+    font-weight: 700;
+    outline: none;
+    background-color: hsl(176, 50%, 47%);
+  }
+
+  .dropdown-pledge-btn:hover {
+    background-color: hsl(176, 72%, 28%);
+  }
+}
