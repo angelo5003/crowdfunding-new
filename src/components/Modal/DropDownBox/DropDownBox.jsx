@@ -4,7 +4,11 @@ import { LiaDollarSignSolid } from "react-icons/lia";
 import { AmountPropType } from "../../../utils/PropTypes";
 import SuccesModal from "../SuccesModal/SuccesModal";
 
-const DropDownBox = ({ selectAmount, setSelectAmount }) => {
+const DropDownBox = ({
+  selectAmount,
+  setSelectAmount,
+  handleProductAmount,
+}) => {
   const [succesModal, setSuccessModal] = useState(false);
 
   const handleChange = (e) => {
@@ -14,6 +18,7 @@ const DropDownBox = ({ selectAmount, setSelectAmount }) => {
 
   const handleSuccesModal = () => {
     setSuccessModal(!succesModal);
+    handleProductAmount();
   };
   return (
     <section className="dropdown-pledge-outer-container">

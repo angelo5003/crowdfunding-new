@@ -7,13 +7,39 @@ import backerData from "../../../data/backerData.json";
 
 const ProductModal = () => {
   const [productData, setProductData] = useState(backerData);
-  const [selectedItem, setSelectedItem] = useState("");
+  const [selectedItem, setSelectedItem] = useState(null);
   const [selectAmount, setSelectAmount] = useState(0);
-  console.log(`typeOf:`, typeof selectAmount);
 
   const handleSelectedItem = (productName) => {
     // productName is a parameter for the product.name coming from the input field.
     setSelectedItem(productName);
+  };
+
+  console.log(`productData:`, productData);
+
+  // This function ensures that the selected input field's value is subtracted from the array.
+  const handleProductAmount = () => {
+    // add selectedItem to the if state to make sure that we only change the value of the selected input field where in. Check if a selectedItem is present to avoid unintended changes.
+    if (selectedItem) {
+      // create a variable and map over the productData array state
+      const updatedProductData = productData.map((product) => {
+        // While mapping, check if the current product's name matches the selectedItem input field
+        if (product.name === selectedItem) {
+          // If it's the selected item, update the backerLeft value by subtracting selectAmount.
+          return {
+            ...product,
+            backerLeft: product.backerLeft - selectAmount,
+          };
+        }
+        // For other items, keep the product object unchanged.
+        return product;
+      });
+      // Update the productData state with the new array to reflect the changes in the UI.
+      setProductData(updatedProductData);
+      console.log(`updated:`, updatedProductData);
+    }
+    // reset the value of the input field to 0 again
+    setSelectAmount(0);
   };
 
   return (
@@ -62,6 +88,7 @@ const ProductModal = () => {
                       <DropDownBox
                         selectAmount={selectAmount}
                         setSelectAmount={setSelectAmount}
+                        handleProductAmount={handleProductAmount}
                       />
                     ) : null}
                   </div>
